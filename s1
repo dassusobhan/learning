@@ -1,12 +1,11 @@
-  
 server.port=8082
 spring.h2.console.enabled=true
 spring.h2.console.path=/h2-console
-spring.datasource.url=jdbc:h2:mem:employee_devdb
+spring.datasource.url=jdbc:h2:mem:employee_dev_db
 spring.datasource.driver-class-name=org.h2.Driver
 
 spring.datasource.username=admin
 spring.datasource.password=dev
 
 spring.profiles.active=dev
-management.endpoints.web.exposure.include=*
+management.endpoints.web.exposure.include=refresh,info
